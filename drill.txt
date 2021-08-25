@@ -1,0 +1,55 @@
+-----Pipes -----
+
+
+  wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
+  head -n 3 Harry Potter and the Goblet of Fire.txt
+  tail -n 10 'Harry Potter and the Goblet of Fire.txt'
+  grep -o Harry 'Harry Potter and the Goblet of Fire.txt' |wc -l
+  grep -o Ron 'Harry Potter and the Goblet of Fire.txt' |wc -l
+  grep -o Hermione 'Harry Potter and the Goblet of Fire.txt' | wc -l
+  grep -c Dumbledore 'Harry Potter and the Goblet of Fire.txt' | wc -l
+  head -200 'Harry Potter and the Goblet of Fire.txt' | tail +100
+  tr '' '\n'<'Harry Potter and the Goblet of Fire.txt' | sort | uniq | wc -l
+  pidof chrome
+  ps -o ppid= 1656
+  kill 1656
+  
+  
+ -------Processes, port-----------
+   
+  pidof chrome
+  ps -o ppid= 1656
+  kill 1656
+  ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head -n 4
+  ps -eo pid,ppid,cmd,%cpu,%mem --sort=-%mem | head -n 4
+  python -m SimpleHTTPServer 8000
+  kill $(Isop -ti tcp:8000)
+  sudo python -m SimpleHTTPServer 90
+  netstat -a | more
+  sudo isof -ti tcp:5432
+  
+  ------Managing software---------
+  
+  
+  sudo apt-get install htop vim nginx
+  sudo apt-get --purge remove nginx
+  
+  
+  ------------Misc-------------
+  
+    hostname -I
+    host google.com
+    ping google.com
+    which node
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
